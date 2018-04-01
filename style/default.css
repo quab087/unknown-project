@@ -1,0 +1,92 @@
+body{margin:0;padding:0;font-size:12px;overflow:auto}
+
+#mainDiv{width:100%;height:100%}
+
+#loveHeart{float:left;margin-right:0px;width:670px;height:98vh}
+
+#garden{width:100%;height:100%}
+
+#words{font-family:"sans-serif";width:505px;font-size:24px;color:#666}
+
+#messages{display:none;margin-left:108px;margin-top:15%;font-style:italic}
+
+#button_div{display:none;}
+
+@media screen and (max-width: 1000px){
+	
+	
+	
+	#code{float:left;position:absolute;white-space: nowrap;left:0vh;width:100%;height:98%;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:32px !important;top:18vh;}
+	#loveHeart{display:none;float:left;margin-right:0px;width:100%;height:98%}
+	.rotate_Y{
+		
+		transform:rotateY(360deg);
+		transition:transform 2s;
+		-webkit-transition:transform 2s;
+		-moz-transition:transform 2s;
+		-o-transition:transform 2s;
+	}
+	
+	.hidden{
+		display:none;
+	}
+	
+	.button_size{transform:scale(2);}
+	
+	#button_div{display:block;float:left;position:absolute;margin-left:80%;margin-top:90%;}
+	
+	.show{
+		display:block;
+	}
+	.min{
+		transform:scale(0.5,0.5);
+	}
+	
+	#messages{white-space:nowrap;display:none;position:absolute;font-size:60px !important;margin:0 auto;margin-top:25%;font-style:italic}
+	#HBD .signature{
+	color:#fffafa;
+	font-size:50% !important;
+	margin-left:50%;
+	}
+	#HBD{
+	padding:5px;
+	font-size:200% !important;
+	margin-top:0%;
+	margin-left:0%;
+	font-style:italic;
+	display:none
+}
+}
+
+
+#HBD{
+	font-size:300%;
+	margin-top:0%;
+	margin-left:0%;
+	font-style:italic;
+	display:none;
+	white-space: nowrap;
+}
+
+#HBD .signature{color:#fffafa;margin-top:0%;margin-left:75%;font-size:28px;font-style:italic}
+
+#code{background:black;float:left;width:440px;height:400px;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
+
+#code .code-color{color:#fffafa;}
+
+#code .string{color:#ffd700}
+
+#code .keyword{color:#ff4500;font-weight:bold}
+
+#code .placeholder{margin-left:15px}
+
+#code .space{margin-left:7px}
+
+#code .comments{color:#3cb371}
+
+#code .reset{position:absolute;}
+
+#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
+
+ 
+
