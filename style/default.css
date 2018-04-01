@@ -70,7 +70,7 @@ body{margin:0;padding:0;font-size:12px;overflow:auto}
 
 #HBD .signature{color:#fffafa;margin-top:0%;margin-left:75%;font-size:28px;font-style:italic}
 
-#code{background:black;float:left;width:440px;height:400px;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
+#code{background:white;float:left;width:440px;height:400px;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
 
 #code .code-color{color:#000000;}
 
