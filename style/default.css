@@ -33,7 +33,7 @@ body{margin:0;padding:0;font-size:12px;overflow:auto}
 	
 	.button_size{transform:scale(2);}
 	
-	#button_div{display:block;float:left;position:absolute;margin-left:80%;margin-top:90%;}
+	#button_div{display:block;float:left;position:absolute;margin-left:80%;margin-top:70%;}
 	
 	.show{
 		display:block;
