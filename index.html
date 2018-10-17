@@ -1,139 +1,14 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+
 <html>
-<head>
-    <title>The simple letter 4 u</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="style/default.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-</head>
 
-<body style="background:#fffafa;">
-    <script type="text/javascript" src="style/jquery.js"></script>
-    <script type="text/javascript" src="style/garden.js"></script>
-    <script type="text/javascript" src="style/functions.js"></script>
-	
-	<div style="position:absolute;z-index:99;" id="button_div"><div id="button_div_down">
-	<a id="second" class="btn-floating btn-large waves-effect waves-light transparent button_size" style="border-style: solid;
-  border-width: 1px;border-color:black;"><i class="material-icons" style="color:black;">chevron_right</i></a>
-	 </button>
-	</div></div>	
-    <div id="mainDiv" style="z-index:5;">
-	
-        <div id="content">
-			
-            <strong><div id="code" style="z-index:6;">
-			
-				<div class="reset">
-              <span class="comments">/*</span><span class="comments">Today:April 01,2018/weather:sunny</span><br>
-              <span class="comments">Subject:Something I want to tell you</span>
-              <span class="comments">*/</span><br />
-                <span class="code-color">Letter letter = </span><span class="keyword">new</span><span class="code-color"> Letter(</span><span class="string">"simple"</span><span class="code-color">);</span><br />
-				<span class="comments">//這是一封簡單的信</span><br />
-                <span class="code-color">Girl u = </span><span class="keyword">new</span><span class="code-color"> Girl(</span><span class="string">"XXX"</span><span class="code-color">);</span><br />
-                <span class="comments">//感覺,下筆前,一個人想了好多東西xd</span><br />
-                <span class="code-color">Web card = </span><span class="keyword">new</span><span class="code-color"> Web(</span><span class="string">"Letter"</span><span class="code-color">);</span><br />
-                <span class="comments">//然後不小心寫成網頁了......</span><br />
-				<span class="code-color"><span class="keyword">var</span> message = [];</span><br />
-                <span class="comments">//給 XXX :</span><br />
-                <span class="code-color">message.push(</span><span class="string">"Gone are the days \n"</span><span class="code-color">);</span><br>
-                <span class="comments">//認識妳至今,兩個冬天左右的時間悄然溜走了呢~</span><br />
-				<span class="code-color">message.push(Memories.Review(<span class="string">"summer"</span></span><span class="code-color">));</span><br />
-                <span class="comments">/*兩年前的夏末,莫名其妙認識了妳,<br />我絕對不會忘記,你當時那張低能到不行的頭貼......*/</span><br />
-                <span class="code-color">message.push(Memories.Review(</span><span class="string">"autumn"</span><span class="code-color">));</span><br />
-				<span class="comments">/*開學時是個蕭然的秋天,當時每天都跟妳報備學餐多難吃、<br />微積分超難、颱風幹爆冷..?<br />到底為甚麼會想跟妳說那些呢?xd*/</span><br />
-                <span class="code-color">message.push(Memories.Review(</span><span class="string">"Xmas"</span><span class="code-color">));</span><br />
-				<span class="comments">//耶誕夜,我們第一次見面,那天還蠻冷的...我是說氣氛QQ</span><br />	
-				<span class="code-color">message.push(Memories.Review(</span><span class="string">"My_precious"</span><span class="code-color">));</span><br>
-				<span class="comments">//到底為甚麼呢,在那尷尬的見面之後,居然就喜歡上妳了-_-||</span><br />
-				<span class="code-color">card.write(message,<span class="string">"for"</span>,u);</span><br />
-                <span class="comments">/*明天、下個月、下學期、明年,以及更遠更遠的未來,我想,<br />我肯定會一直這樣告訴自己:能夠與妳相遇,是一件非常美好的事情!!*/</span><br />
-               <!-- <span class="code-color">card.end();</span><br /><span class="comments">//篇幅有限......</span> -->
-			</div>
-            </div></strong>
-            <div id="loveHeart" style="z-index:7;">
-                <canvas id="garden" ></canvas>
-                <div id="words" style="position:relative;">
-                    <div id="messages" style="position:absolute;">
+    <head>
+        <!-- 這裡放HTML資訊 -->
+    </head>
 
-                    <strong style="font-family: 'Dancing Script', cursive;
-		color:black;">ずっと、ずっと</strong>
-                      
-                    <div class="signature" id="HBD">
-					
-                        <strong style="font-family: 'Dancing Script', cursive;
-		color:black;">私は君が</strong><br/>
-						<span class="signature" id="for" style="font-family: 'Dancing Script', cursive;
-		color:black;" ><strong>好きよ。</strong><br></span>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	
-    <script type="text/javascript">
-        var offsetX = $("#loveHeart").width() /2;
-        var offsetY = $("#loveHeart").height() / 2 - 55;
-        var count = 1;
-        if (!document.createElement('canvas').getContext) {
-            var msg = document.createElement("div");
-            msg.id = "errorMsg";
-            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-            document.body.appendChild(msg);
-            $("#code").css("display", "none")
-            
-        } else {
-            setTimeout(function () {
-				
-				if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-				
-                adjustWordsPosition();
-                startHeartAnimation();
-				}
-				else{
-					$(document).ready(function(){
-						
-						$("#second").click(function(){
-							if($("#loveHeart").css("display") == "none"){
-								if($("#loveHeart").hasClass("rotate_Y"))
-									$("#loveHeart").removeClass("rotate_Y");
-								$("#code").addClass("rotate_Y");
-								$("#code").fadeOut(1000);
-								if($("#button_div_down").hasClass("rotate_Y"))
-									$("#button_div_down").removeClass("rotate_Y");
-								$("#button_div").addClass("rotate_Y");
-								var x=setTimeout("document.getElementById('second').innerHTML = "+"'<i class="+'"material-icons" style="color:black;"'+">chevron_left</i>'",1000);
-								$("#loveHeart").fadeIn(1000);
-								if(count < 350){
-								adjustWordsPosition();
-								startHeartAnimation();
-								}
-							}
-							else{
-								if($("#code").hasClass("rotate_Y"))
-									$("#code").removeClass("rotate_Y");
-								$("#loveHeart").addClass("rotate_Y");
-								$("#loveHeart").fadeOut(1000);
-								if($("#button_div").hasClass("rotate_Y"))
-									$("#button_div").removeClass("rotate_Y");
-								$("#button_div_down").addClass("rotate_Y");
-								var x=setTimeout("document.getElementById('second').innerHTML = "+"'<i class="+'"material-icons" style="color:black;"'+">chevron_right</i>'",1000);
-								$("#code").fadeIn(1000);
-							}
-							count++;
-						});
-					});
-				}
-            },/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)?1500 : 13000);
-            
-            adjustCodePosition();
-            $("#code").typewriter();
-			
-        }
-    </script>
-	</div>
-</body>
+    <body>
+        <!-- 這裡放HTML內容主體 -->
+        Hello, World!
+    </body>
+
 </html>
